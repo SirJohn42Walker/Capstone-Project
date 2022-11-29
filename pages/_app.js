@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar/Navbar";
 import GlobalStyles from "../styles/GlobalStyles";
 
 function MyApp({Component, pageProps}) {
@@ -5,6 +6,7 @@ function MyApp({Component, pageProps}) {
     <>
       <GlobalStyles />
       <Component {...pageProps} />
+      <Navbar />
     </>
   );
 }
