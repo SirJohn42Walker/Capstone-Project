@@ -20,7 +20,6 @@ const FixedHeader = styled.div`
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  //filter: drop-shadow(3px -3px 4px rgba(0, 0, 0, 0.25));
 `;
 
 const Headline = styled.h1`
