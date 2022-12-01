@@ -6,10 +6,10 @@ describe("Home", () => {
   it("renders an octopus", () => {
     render(<Home />);
 
-    const paragraph = screen.getByRole("paragraph", {
+    const heading = screen.getByRole("heading", {
       name: /🐙/i,
     });
 
-    expect(paragraph).toBeInTheDocument();
+    expect(heading).toBeInTheDocument();
   });
 });

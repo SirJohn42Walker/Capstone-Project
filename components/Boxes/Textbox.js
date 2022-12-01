@@ -18,7 +18,7 @@ const Frame = styled.div`
   justify-content: center;
 `;
 
-const Text = styled.p`
+const Text = styled.h2`
   margin: 1.5rem;
   font-size: medium;
   text-align: justify;
