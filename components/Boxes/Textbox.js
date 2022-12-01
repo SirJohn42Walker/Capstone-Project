@@ -12,7 +12,7 @@ const Frame = styled.div`
   color: var(--color1);
   background-color: var(--color13);
   border: 2px solid var(--color12);
-  margin: 12vh 8vw 0 8vw;
+  margin: 15vh 8vw 0 8vw;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -20,6 +20,6 @@ const Frame = styled.div`
 
 const Text = styled.p`
   margin: 1.5rem;
-  font-size: x-large;
+  font-size: medium;
   text-align: justify;
 `;
