@@ -9,15 +9,20 @@ export default function Header() {
 }
 
 const FixedHeader = styled.div`
+  z-index: 1;
   position: fixed;
-  width: 100%;
-  top: 0;
+  width: 98vw;
+  top: 1vw;
+  left: 1vw;
+  right: 1vw;
   height: 80px;
-  background-color: #0b2545;
+  background-color: var(--color14);
+  border-radius: 20px;
   display: flex;
   justify-content: center;
+  //filter: drop-shadow(3px -3px 4px rgba(0, 0, 0, 0.25));
 `;
 
 const Headline = styled.h1`
-  color: #fae3c6;
+  color: var(--color3);
 `;
