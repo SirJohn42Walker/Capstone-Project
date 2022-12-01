@@ -14,7 +14,7 @@ export default function Home() {
         Very well. If you think yourself ready, click the weird oldtimy gameboy
         thingy at the bottom.
         <br />
-        Oh, and don't let the 🐙 bite!
+        Oh, and do not let the 🐙 bite!
       </Textbox>
     </Background>
   );
