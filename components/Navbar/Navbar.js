@@ -9,7 +9,7 @@ export default function Navbar() {
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            fill="#FAE3C6"
+            fill="var(--color3)"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>The home button</title>
@@ -26,7 +26,7 @@ export default function Navbar() {
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            fill="#FAE3C6"
+            fill="var(--color3)"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>The game start button</title>
@@ -38,7 +38,7 @@ export default function Navbar() {
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            fill="#FAE3C6"
+            fill="var(--color3)"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>The random-level button</title>
@@ -51,7 +51,7 @@ export default function Navbar() {
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            fill="#FAE3C6"
+            fill="var(--color3)"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>The profile-page button</title>
@@ -65,10 +65,14 @@ export default function Navbar() {
 
 const NavBar = styled.nav`
   position: fixed;
-  width: 100%;
-  bottom: 0;
+  width: 98vw;
+  bottom: 1vw;
+  left: 1vw;
+  right: 1vw;
   height: 80px;
-  background-color: #0b2545;
+  border-radius: 20px;
+  background-color: var(--color14);
+  filter: drop-shadow(3px -3px 4px rgba(0, 0, 0, 0.25));
 `;
 
 const NavIcons = styled.ul`
