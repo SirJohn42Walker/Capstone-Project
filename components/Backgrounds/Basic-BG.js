@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-export default function BasicBG() {
-  return <Background />;
-}
-
-const Background = styled.main`
+const StyledMain = styled.main`
   position: absolute;
   left: 0;
   right: 0;
@@ -22,3 +18,5 @@ const Background = styled.main`
   );
   z-index: -1;
 `;
+
+export default StyledMain;

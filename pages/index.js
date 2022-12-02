@@ -1,10 +1,9 @@
 import Textbox from "../components/Boxes/Textbox";
-import BasicBG from "../components/Backgrounds/Basic-BG";
+import StyledMain from "../components/Backgrounds/Basic-BG";
 
 export default function Home() {
   return (
-    <>
-      <BasicBG />
+    <StyledMain>
       <Textbox>
         Welcome to the games! You think you know what awaits you? Think again!
         As of now you can still turn back. But not for long. And if you stay,
@@ -17,6 +16,6 @@ export default function Home() {
         <br />
         Oh, and do not let the 🐙 bite!
       </Textbox>
-    </>
+    </StyledMain>
   );
 }
