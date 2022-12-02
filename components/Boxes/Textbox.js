@@ -16,6 +16,7 @@ const Frame = styled.div`
   border-radius: 25px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 `;
 
 const Text = styled.h2`
