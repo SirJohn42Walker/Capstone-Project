@@ -23,7 +23,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/game" onClick={() => SetActiveState("game")}>
+          <Link href="/game/game" onClick={() => SetActiveState("game")}>
             <GameIconSVG
               width="50"
               heigth="50"
