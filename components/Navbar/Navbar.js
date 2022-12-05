@@ -6,27 +6,51 @@ import {
   RandomIconSVG,
   ProfileIconSVG,
 } from "../Svgs/NavbarSVGs";
+import {useState} from "react";
 
 export default function Navbar() {
+  const [activeState, SetActiveState] = useState("home");
   return (
     <NavBar>
       <NavIcons>
         <li>
-          <Link href="/">
-            <HomeIconSVG width="50" heigth="50" fill="var(--color3)" />
+          <Link href="/" onClick={() => SetActiveState("home")}>
+            <HomeIconSVG
+              width="50"
+              heigth="50"
+              fill={activeState === "home" ? "var(--color8)" : "var(--color3)"}
+            />
           </Link>
         </li>
         <li>
-          <Link href="/game">
-            <GameIconSVG width="50" heigth="50" fill="var(--color3)" />
+          <Link href="/game" onClick={() => SetActiveState("game")}>
+            <GameIconSVG
+              width="50"
+              heigth="50"
+              fill={activeState === "game" ? "var(--color8)" : "var(--color3)"}
+            />
           </Link>
         </li>
         <li>
-          <RandomIconSVG width="50" heigth="50" fill="var(--color3)" />
+          <Link href="/random" onClick={() => SetActiveState("random")}>
+            <RandomIconSVG
+              width="50"
+              heigth="50"
+              fill={
+                activeState === "random" ? "var(--color8)" : "var(--color3)"
+              }
+            />
+          </Link>
         </li>
         <li>
-          <Link href="/profile">
-            <ProfileIconSVG width="50" heigth="50" fill="var(--color3)" />
+          <Link href="/profile" onClick={() => SetActiveState("profile")}>
+            <ProfileIconSVG
+              width="50"
+              heigth="50"
+              fill={
+                activeState === "profile" ? "var(--color8)" : "var(--color3)"
+              }
+            />
           </Link>
         </li>
       </NavIcons>
