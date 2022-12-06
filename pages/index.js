@@ -1,10 +1,10 @@
-import Textbox from "../components/Boxes/Textbox";
+import TextBox from "../components/Boxes/Textbox";
 import StyledMain from "../components/Backgrounds/Basic-BG";
 
 export default function Home() {
   return (
     <StyledMain>
-      <Textbox>
+      <TextBox>
         Welcome to the games! You think you know what awaits you? Think again!
         As of now you can still turn back. But not for long. And if you stay,
         your mind certainly wont.
@@ -15,7 +15,7 @@ export default function Home() {
         thingy at the bottom.
         <br />
         Oh, and do not let the 🐙 bite!
-      </Textbox>
+      </TextBox>
     </StyledMain>
   );
 }

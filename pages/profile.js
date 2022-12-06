@@ -1,15 +1,15 @@
-import Textbox from "../components/Boxes/Textbox";
+import TextBox from "../components/Boxes/Textbox";
 import StyledMain from "../components/Backgrounds/Basic-BG";
 
 export default function Profile() {
   return (
     <StyledMain>
-      <Textbox>
+      <TextBox>
         Username: <br />
         Max Musterghoti
-      </Textbox>
-      <Textbox>Level Reached: 6</Textbox>
-      <Textbox>Time spent ingame: 66 Minutes</Textbox>
+      </TextBox>
+      <TextBox>Level Reached: 6</TextBox>
+      <TextBox>Time spent ingame: 66 Minutes</TextBox>
     </StyledMain>
   );
 }
