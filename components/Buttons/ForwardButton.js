@@ -5,7 +5,9 @@ export const ForwardButton = styled.button`
   position: fixed;
   bottom: 20vh;
   left: 50%;
-  font-size: large;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: medium;
   display: flex;
   max-width: 70vw;
   transform: translate(-50%);

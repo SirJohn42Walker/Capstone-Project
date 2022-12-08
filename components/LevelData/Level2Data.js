@@ -1,0 +1,31 @@
+export const Level2Data = {
+  text: [
+    "You begin to move, but as your arm reaches up to the tether that fixes you to your boat, your joints lock up.",
+    "After a moment you realise that it is not technically your joints that are locked but those of your diving suit. So you retain a bit of wiggleroom inside, but your suit does not move an inch.",
+  ],
+  dialog: [
+    "Very well, you seem to be able to follow simple instructions with just minimal encouragement. We might be able to work with each other after all.",
+    "Well, I've so much more planned for you, and it is all instruction-based, so it's nice to see that you will be able to keep up.",
+    "I just did. Maybe you're not that smart after all. But since you asked so politely, I will lay it out for you one more time: I am going to make you solve increasingly ridiculous riddles until your tiny, fragile mind cannot take it any longer and madness takes you.",
+    "Oh, you don't, do you? Well why didn't you just say so? If only I had known! Of course we won't do that then.",
+    "Or, just hear me out, I am going to ignore all your wishes, as I have already done so far, and I will make you do as I wish. Yeah, I think that's what I will do.",
+    "Go ahead.",
+    "You can check out any time you like. But you can never leave!",
+    "So now I have a new riddle for you. Are you ready?",
+    "Okay. So I want you to press the red button.",
+    "Just do it, will you?",
+  ],
+  buttonText: [
+    "Work? What do you mean, 'work'?",
+    "You still haven't even told me what you plan to do to me!",
+    "That seems... Extreme. I don't think I want to do that.",
+    "Well, good.",
+    "But I will not play. I will just leave then.",
+    "I will!",
+    "That's not cool!",
+    "What is happening?",
+    "*Sigh* So what now?",
+    "Bring it on...",
+    "Are you serious? This again?",
+  ],
+};
