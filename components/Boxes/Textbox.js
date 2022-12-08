@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Textbox({children}) {
+export default function TextBox({children}) {
   return (
     <Frame>
       <Text>{children}</Text>
@@ -8,9 +8,18 @@ export default function Textbox({children}) {
   );
 }
 
+export function DialogBox({children}) {
+  return (
+    <Frame dialog={true}>
+      <Text>{children}</Text>
+    </Frame>
+  );
+}
+
 const Frame = styled.div`
-  color: var(--color1);
-  background-color: var(--color13);
+  color: ${props => (props.dialog ? "var(--color8)" : "var(--color1)")};
+  background-color: ${props =>
+    props.dialog ? "var(--color2)" : "var(--color13)"};
   border: 2px solid var(--color12);
   margin: 15vh 8vw 0 8vw;
   border-radius: 25px;
