@@ -1,12 +1,15 @@
 import TextBox from "../../components/Boxes/Textbox";
+import {DialogBox} from "../../components/Boxes/Textbox";
 import StyledMain from "../../components/Backgrounds/Basic-BG";
 import {useState} from "react";
-import {Level2Data} from "../../components/LevelData/Level2Data";
+import {level2Data} from "../../components/LevelData/Level2Data";
+import {ForwardButton} from "../../components/Buttons/ForwardButton";
 import {
   RedButtonSVG,
   BlueButtonSVG,
   GreenButtonSVG,
 } from "../../components/Svgs/ButtonSVGs";
+import Link from "next/link";
 
 export default function Level2() {
   const [textState, setTextState] = useState(0);
@@ -14,16 +17,23 @@ export default function Level2() {
   const [buttonTextState, setButtonTextState] = useState(0);
 
   function furtherButton() {
-    if (textState < 6) {
-      setTextState(textState + 1);
-      setButtonTextState(buttonTextState + 1);
-    } else setDialogState(dialogState + 1);
     setButtonTextState(buttonTextState + 1);
+    buttonTextState >= 6 && buttonTextState < 8
+      ? setTextState(textState + 1)
+      : setDialogState(dialogState + 1);
   }
 
   return (
     <StyledMain>
-      <TextBox>Level2: Even more weird dialog! - Coming soon</TextBox>
+      {buttonTextState >= 6 && buttonTextState < 8 ? (
+        <TextBox>{level2Data.text[textState]}</TextBox>
+      ) : (
+        <DialogBox>{level2Data.dialog[dialogState]}</DialogBox>
+      )}
+
+      <ForwardButton onClick={furtherButton}>
+        {level2Data.buttonText[buttonTextState]}
+      </ForwardButton>
     </StyledMain>
   );
 }

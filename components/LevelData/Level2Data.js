@@ -1,7 +1,7 @@
-export const Level2Data = {
+export const level2Data = {
   text: [
     "You begin to move, but as your arm reaches up to the tether that fixes you to your boat, your joints lock up.",
-    "After a moment you realise that it is not technically your joints that are locked but those of your diving suit. So you retain a bit of wiggleroom inside, but your suit does not move an inch.",
+    "After a moment you realise that it is not technically *your* joints that are locked but those of your diving suit. So you retain a bit of wiggleroom inside, but your suit does not move an inch.",
   ],
   dialog: [
     "Very well, you seem to be able to follow simple instructions with just minimal encouragement. We might be able to work with each other after all.",
