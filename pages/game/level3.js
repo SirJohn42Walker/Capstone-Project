@@ -6,6 +6,7 @@ export default function Level3() {
   return (
     <StyledMain>
       <TextBox>Platzhalter</TextBox>
+      <DialogBox>Noch mehr Platzhalter</DialogBox>
     </StyledMain>
   );
 }
