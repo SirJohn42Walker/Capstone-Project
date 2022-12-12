@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export function RedButtonSVG({width, height}) {
+export function RedButtonSVG({width, height, top, left}) {
   return (
     <Svg
       width={width}
       height={height}
+      top={top}
+      left={left}
       viewBox="0 0 183 183"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -159,11 +161,13 @@ export function RedButtonSVG({width, height}) {
   );
 }
 
-export function BlueButtonSVG({width, height}) {
+export function BlueButtonSVG({width, height, top, left}) {
   return (
     <Svg
       width={width}
       height={height}
+      top={top}
+      left={left}
       viewBox="0 0 183 183"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -318,11 +322,13 @@ export function BlueButtonSVG({width, height}) {
   );
 }
 
-export function GreenButtonSVG({width, height}) {
+export function GreenButtonSVG({width, height, top, left}) {
   return (
     <Svg
       width={width}
       height={height}
+      top={top}
+      left={left}
       viewBox="0 0 183 183"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -482,4 +488,6 @@ const Svg = styled.svg`
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  ${props => (props.top ? `top: ${props.top};` : "")};
+  ${props => (props.left ? `left: ${props.left};` : "")};
 `;

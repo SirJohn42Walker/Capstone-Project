@@ -30,7 +30,17 @@ export default function Level2() {
       ) : (
         <DialogBox>{level2Data.dialog[dialogState]}</DialogBox>
       )}
-
+      {buttonTextState > 9 ? (
+        <>
+          <BlueButtonSVG width="100" height="100" top="60%" left="30%" />
+          <Link href="/game/level3">
+            <RedButtonSVG width="100" height="100" top="60%" left="70%" />
+          </Link>
+          <GreenButtonSVG width="100" height="100" top="42%" />
+        </>
+      ) : (
+        <></>
+      )}
       <ForwardButton onClick={furtherButton}>
         {level2Data.buttonText[buttonTextState]}
       </ForwardButton>

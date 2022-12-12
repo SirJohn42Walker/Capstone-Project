@@ -19,7 +19,7 @@ export default function Level1() {
     } else setDialogState(dialogState + 1);
     setButtonTextState(buttonTextState + 1);
   }
-
+  //TODO implement new delivery logic from level 2
   function TextFill() {
     if (textState < 6) {
       return <TextBox>{level1Data.text[textState]}</TextBox>;
