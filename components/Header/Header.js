@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Header() {
   return (
     <FixedHeader>
-      <Headline>The Game of Mind</Headline>
+      <Headline>Depths of Reason</Headline>
     </FixedHeader>
   );
 }

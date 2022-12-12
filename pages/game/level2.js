@@ -1,6 +1,6 @@
 import TextBox from "../../components/Boxes/Textbox";
 import {DialogBox} from "../../components/Boxes/Textbox";
-import StyledMain from "../../components/Backgrounds/Basic-BG";
+import {StyledLevel2} from "../../components/Backgrounds/Basic-BG";
 import {useState} from "react";
 import {level2Data} from "../../components/LevelData/Level2Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
@@ -24,7 +24,7 @@ export default function Level2() {
   }
 
   return (
-    <StyledMain>
+    <StyledLevel2>
       {buttonTextState >= 6 && buttonTextState < 8 ? (
         <TextBox>{level2Data.text[textState]}</TextBox>
       ) : (
@@ -44,6 +44,6 @@ export default function Level2() {
       <ForwardButton onClick={furtherButton}>
         {level2Data.buttonText[buttonTextState]}
       </ForwardButton>
-    </StyledMain>
+    </StyledLevel2>
   );
 }

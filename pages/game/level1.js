@@ -1,6 +1,6 @@
 import TextBox from "../../components/Boxes/Textbox";
 import {DialogBox} from "../../components/Boxes/Textbox";
-import StyledMain from "../../components/Backgrounds/Basic-BG";
+import {StyledLevel1} from "../../components/Backgrounds/Basic-BG";
 import {useState} from "react";
 import {level1Data} from "../../components/LevelData/Level1Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
@@ -39,11 +39,11 @@ export default function Level1() {
   }
 
   return (
-    <StyledMain>
+    <StyledLevel1>
       <TextFill />
       <ForwardButton onClick={furtherButton}>
         {level1Data.buttonText[buttonTextState]}
       </ForwardButton>
-    </StyledMain>
+    </StyledLevel1>
   );
 }

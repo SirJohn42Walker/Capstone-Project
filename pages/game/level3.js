@@ -1,12 +1,12 @@
-import StyledMain from "../../components/Backgrounds/Basic-BG";
+import {StyledLevel3} from "../../components/Backgrounds/Basic-BG";
 import TextBox from "../../components/Boxes/Textbox";
 import {DialogBox} from "../../components/Boxes/Textbox";
 
 export default function Level3() {
   return (
-    <StyledMain>
+    <StyledLevel3>
       <TextBox>Platzhalter</TextBox>
       <DialogBox>Noch mehr Platzhalter</DialogBox>
-    </StyledMain>
+    </StyledLevel3>
   );
 }
