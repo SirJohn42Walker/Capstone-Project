@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {BackgroundImages} from "./BackgroundImages";
 
 const StyledMain = styled.main`
   position: absolute;
@@ -19,7 +20,7 @@ const StyledMain = styled.main`
   z-index: -1;
 `;
 
-export const StyledLevel1 = styled.main`
+export const StyledLevelBackground = styled.main`
   position: absolute;
   left: 0;
   right: 0;
@@ -28,49 +29,10 @@ export const StyledLevel1 = styled.main`
   height: auto;
   width: auto;
   max-width: 100%;
-  background-image: url("/assets/ali-abdul-rahman-Xva-TYqwHhA-unsplash.jpg");
-  background-size: cover;
-  z-index: -1;
-`;
-
-export const StyledLevel2 = styled.main`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  background-image: url("/assets/angus-gray-qEaELLSYZW0-unsplash.jpg");
-  background-size: cover;
-  z-index: -1;
-`;
-
-export const StyledLevel3 = styled.main`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  background-image: url("/assets/silas-baisch-f4bfvVXKZP8-unsplash.jpg");
-  background-size: cover;
-  z-index: -1;
-`;
-
-export const StyledLevel0 = styled.main`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  background-image: url("/assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg");
+  ${props =>
+    props.levelState
+      ? `background-image: url(${BackgroundImages[props.levelState]});`
+      : ""}
   background-size: cover;
   z-index: -1;
 `;
