@@ -1,7 +1,7 @@
 import TextBox from "../../components/Boxes/Textbox";
 import {DialogBox} from "../../components/Boxes/Textbox";
-import StyledMain from "../../components/Backgrounds/Basic-BG";
-import {useState} from "react";
+import {StyledLevelBackground} from "../../components/Backgrounds/Basic-BG";
+import {useState, useEffect} from "react";
 import {level2Data} from "../../components/LevelData/Level2Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
 import {
@@ -11,10 +11,13 @@ import {
 } from "../../components/Svgs/ButtonSVGs";
 import Link from "next/link";
 
-export default function Level2() {
+export default function Level2({levelState, handleLevelChange}) {
   const [textState, setTextState] = useState(0);
   const [dialogState, setDialogState] = useState(0);
   const [buttonTextState, setButtonTextState] = useState(0);
+  useEffect(() => {
+    handleLevelChange(3);
+  }, []);
 
   function furtherButton() {
     setButtonTextState(buttonTextState + 1);
@@ -24,7 +27,7 @@ export default function Level2() {
   }
 
   return (
-    <StyledMain>
+    <StyledLevelBackground levelState={levelState}>
       {buttonTextState >= 6 && buttonTextState < 8 ? (
         <TextBox>{level2Data.text[textState]}</TextBox>
       ) : (
@@ -44,6 +47,6 @@ export default function Level2() {
       <ForwardButton onClick={furtherButton}>
         {level2Data.buttonText[buttonTextState]}
       </ForwardButton>
-    </StyledMain>
+    </StyledLevelBackground>
   );
 }

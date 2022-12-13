@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {BackgroundImages} from "./BackgroundImages";
 
 const StyledMain = styled.main`
   position: absolute;
@@ -16,6 +17,23 @@ const StyledMain = styled.main`
     var(--color18) 241.88deg,
     var(--color15) 360deg
   );
+  z-index: -1;
+`;
+
+export const StyledLevelBackground = styled.main`
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  ${props =>
+    props.levelState
+      ? `background-image: url(${BackgroundImages[props.levelState]});`
+      : ""}
+  background-size: cover;
   z-index: -1;
 `;
 

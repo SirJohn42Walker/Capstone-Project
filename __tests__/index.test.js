@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 
 describe("Home", () => {
   it("renders an octopus", () => {
-    render(<Home />);
+    render(<Home levelState={1} handleLevelChange={() => {}} />);
 
     const heading = screen.getByRole("heading", {
       name: /🐙/i,

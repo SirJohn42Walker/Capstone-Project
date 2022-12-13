@@ -17,6 +17,7 @@ export function DialogBox({children}) {
 }
 
 const Frame = styled.div`
+  font-family: ${props => (props.dialog ? "Sharp" : "")};
   color: ${props => (props.dialog ? "var(--color8)" : "var(--color1)")};
   background-color: ${props =>
     props.dialog ? "var(--color2)" : "var(--color13)"};
@@ -30,6 +31,6 @@ const Frame = styled.div`
 
 const Text = styled.h2`
   margin: 1.5rem;
-  font-size: medium;
+  font-size: larger;
   text-align: justify;
 `;

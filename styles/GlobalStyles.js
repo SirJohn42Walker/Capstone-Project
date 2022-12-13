@@ -64,6 +64,34 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 600;
         font-style: normal;
     }
+
+    @font-face {
+        font-family: "HappyMonks";
+        src: url("/fonts/HappyMonksMedievalLookingScript.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "KingCastle";
+        src: url("/fonts/King Castle Free Version.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Sharp";
+        src: url("/fonts/sharp-serif.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Christmas";
+        src: url("/fonts/Best Christmas - Personal Use.otf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
 `;
 
 export default GlobalStyles;
