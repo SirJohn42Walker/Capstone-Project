@@ -33,11 +33,11 @@ export default function Level3({levelState, handleLevelChange}) {
           {level3Data.buttonText[buttonTextState]}
         </ForwardButton>
       ) : (
-        <AnswerForm />
-        /* <form>
-            <input type="text" placeholder="Platzhalter"></input>
-            <button type="submit">Test</button>
-          </form> */
+        <AnswerForm
+          rightAnswer={level3Data.answer}
+          rightAnswerReaction={level3Data.dialog[6]}
+          wrongAnswerReaction={level3Data.dialog[7]}
+        />
       )}
     </StyledLevelBackground>
   );

@@ -9,8 +9,11 @@ export const level3Data = {
     "Oh, cranky, are we?",
     "Well, that is just not a very nice thing to say. But have it your way then.",
     "No, no, it's quite alright. Let me just... Gather myself for a moment.",
+    // ----- break to text -----
     "I've got a new riddle for you now! Are you ready?",
     "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+    "Very good. That is an acceptable answer.",
+    "Oh no, that is not right at all. I do worry a bit about you. Maybe you're not smart enough to get out of this after all...",
   ],
   buttonText: [
     "Can we just get on with it, please?",
@@ -23,4 +26,5 @@ export const level3Data = {
     "Let's hear it...",
     "",
   ],
+  answer: "chuck",
 };

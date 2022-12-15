@@ -1,20 +1,23 @@
 import styled from "styled-components";
 import {useState} from "react";
 import {DialogBox} from "../Textbox";
+import {ForwardButton} from "../../Buttons/ForwardButton";
 
-export function AnswerForm() {
+export function AnswerForm({
+  rightAnswer,
+  rightAnswerReaction,
+  wrongAnswerReaction,
+}) {
   const [answer, setAnswer] = useState("");
   const [answerMessage, setAnswerMessage] = useState("");
 
   const handleSubmit = event => {
     event.preventDefault();
-    setAnswer(event.target.value);
-    if (answer.includes("the answer")) {
-      setAnswerMessage("Test123");
-    } else {
-      setAnswerMessage("Dizz 123");
-    }
+    answer?.includes(rightAnswer)
+      ? setAnswerMessage(rightAnswerReaction)
+      : setAnswerMessage(wrongAnswerReaction);
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <InputField
@@ -24,16 +27,16 @@ export function AnswerForm() {
         placeholder="Your answer goes here."
       ></InputField>
       {answerMessage && <DialogBox>{answerMessage}</DialogBox>}
-      <button type="submit">Submit</button>
+      <ForwardButton type="submit">I am sure that is right.</ForwardButton>
     </form>
   );
 }
 
 const InputField = styled.input`
-  background-color: var(--color14);
+  background-color: var(--color13);
   color: var(--color2);
   position: fixed;
-  bottom: 20vh;
+  bottom: 25vh;
   left: 50%;
   border-radius: 15px;
   padding: 5px;
