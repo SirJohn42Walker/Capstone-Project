@@ -23,35 +23,30 @@ export default function Level1({levelState, handleLevelChange}) {
     } else setDialogState(dialogState + 1);
     setButtonTextState(buttonTextState + 1);
   }
-  //TODO implement new delivery logic from level 2
-  function TextFill() {
-    if (textState < 6) {
-      return <TextBox>{level1Data.text[textState]}</TextBox>;
-    }
-    if (dialogState < 15) {
-      return <DialogBox>{level1Data.dialog[dialogState]}</DialogBox>;
-    } else {
-      return (
+
+  return (
+    <StyledLevelBackground levelState={levelState}>
+      {buttonTextState <= 6 ? (
+        <TextBox>{level1Data.text[textState]}</TextBox>
+      ) : (
+        <DialogBox>{level1Data.dialog[dialogState]}</DialogBox>
+      )}
+      {buttonTextState > 20 ? (
         <>
-          <DialogBox>{level1Data.dialog[dialogState]}</DialogBox>
           <Link href="/game/level2">
             <RedButtonSVG width="100" height="100" />
           </Link>
         </>
-      );
-    }
-  }
-
-  return (
-    <StyledLevelBackground levelState={levelState}>
-      <TextFill />
+      ) : (
+        <></>
+      )}
       <ForwardButton onClick={furtherButton}>
         {level1Data.buttonText[buttonTextState]}
       </ForwardButton>
       <SkipButton
         setButtonTextState={setButtonTextState}
         setDialogState={setDialogState}
-        buttonTextValue={20}
+        buttonTextValue={21}
         dialogValue={15}
       />
     </StyledLevelBackground>

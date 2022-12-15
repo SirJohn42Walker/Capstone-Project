@@ -6,7 +6,7 @@ export const level1Data = {
     /*3*/ "You are about to panic, but before the fear can wash over you, you hit the ground. Too fast. The ocean should be way deeper here. Or... Were you dragged down so fast, that what should have taken minutes is over in seconds?",
     /*4*/ "Whatever the reason, the shock of the impact shakes you out of the onset of panic.",
     /*5*/ "And then... A voice in the dark. A voice? Down here? What should be impossible rings loud and clear in your ears.",
-    "No, not in your ears. In your head. In your MIND.",
+    /*6*/ "No, not in your ears. In your head. In your MIND.",
   ],
   dialog: [
     "Aaaaah... You did it, did you? Jumped right into the cold, the dark. Just following your curiosity... You humans are just so... Predictable...",
