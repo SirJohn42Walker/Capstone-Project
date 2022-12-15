@@ -4,7 +4,6 @@ import {DialogBox} from "../../components/Boxes/Textbox";
 import {useState, useEffect} from "react";
 import {level3Data} from "../../components/LevelData/Level3Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
-import Link from "next/link";
 import {AnswerForm} from "../../components/Boxes/Interactive Boxes/AnswerForm";
 
 export default function Level3({levelState, handleLevelChange}) {
