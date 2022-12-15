@@ -6,6 +6,7 @@ import {level1Data} from "../../components/LevelData/Level1Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
 import {RedButtonSVG} from "../../components/Svgs/ButtonSVGs";
 import Link from "next/link";
+import SkipButton from "../../components/Buttons/SkipButton";
 
 export default function Level1({levelState, handleLevelChange}) {
   const [textState, setTextState] = useState(0);
@@ -47,6 +48,12 @@ export default function Level1({levelState, handleLevelChange}) {
       <ForwardButton onClick={furtherButton}>
         {level1Data.buttonText[buttonTextState]}
       </ForwardButton>
+      <SkipButton
+        setButtonTextState={setButtonTextState}
+        setDialogState={setDialogState}
+        buttonTextValue={20}
+        dialogValue={15}
+      />
     </StyledLevelBackground>
   );
 }
