@@ -27,6 +27,7 @@ export const StyledLevelBackground = styled.main`
   top: 0;
   bottom: 0;
   height: auto;
+  ${props => (props.height ? `height: ${props.height};` : "")};
   width: auto;
   max-width: 100%;
   ${props =>

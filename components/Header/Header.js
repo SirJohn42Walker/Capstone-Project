@@ -11,12 +11,13 @@ export default function Header() {
 const FixedHeader = styled.div`
   z-index: 1;
   position: fixed;
-  width: 98vw;
-  top: 1vw;
-  left: 1vw;
-  right: 1vw;
+  width: 96vw;
+  top: 2vw;
+  left: 2vw;
+  right: 2vw;
   height: 80px;
   background-color: var(--color14);
+  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   display: flex;
   justify-content: center;

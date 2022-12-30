@@ -60,14 +60,14 @@ export default function Navbar() {
 
 const NavBar = styled.nav`
   position: fixed;
-  width: 98vw;
-  bottom: 1vw;
-  left: 1vw;
-  right: 1vw;
+  width: 96vw;
+  bottom: 2vw;
+  left: 2vw;
+  right: 2vw;
   height: 80px;
   border-radius: 20px;
   background-color: var(--color14);
-  filter: drop-shadow(3px -3px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(6px -6px 4px rgba(0, 0, 0, 0.25));
 `;
 
 const NavIcons = styled.ul`

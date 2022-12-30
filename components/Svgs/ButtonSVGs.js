@@ -483,7 +483,7 @@ export function GreenButtonSVG({width, height, top, left}) {
   );
 }
 
-const Svg = styled.svg`
+export const Svg = styled.svg`
   position: fixed;
   top: 55%;
   left: 50%;

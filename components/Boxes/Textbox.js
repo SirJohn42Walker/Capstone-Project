@@ -16,7 +16,7 @@ export function DialogBox({children}) {
   );
 }
 
-const Frame = styled.div`
+export const Frame = styled.div`
   font-family: ${props => (props.dialog ? "Sharp" : "")};
   color: ${props => (props.dialog ? "var(--color8)" : "var(--color1)")};
   background-color: ${props =>

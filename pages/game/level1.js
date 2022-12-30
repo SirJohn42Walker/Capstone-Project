@@ -37,9 +37,7 @@ export default function Level1({levelState, handleLevelChange}) {
             <RedButtonSVG width="100" height="100" />
           </Link>
         </>
-      ) : (
-        <></>
-      )}
+      ) : null}
       <ForwardButton onClick={furtherButton}>
         {level1Data.buttonText[buttonTextState]}
       </ForwardButton>
