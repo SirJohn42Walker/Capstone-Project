@@ -38,15 +38,19 @@ export default function Level1({levelState, handleLevelChange}) {
           </Link>
         </>
       ) : null}
-      <ForwardButton onClick={furtherButton}>
-        {level1Data.buttonText[buttonTextState]}
-      </ForwardButton>
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={21}
-        dialogValue={15}
-      />
+      {buttonTextState <= 24 ? (
+        <ForwardButton onClick={furtherButton}>
+          {level1Data.buttonText[buttonTextState]}
+        </ForwardButton>
+      ) : null}
+      {buttonTextState <= 20 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={21}
+          dialogValue={15}
+        />
+      ) : null}
     </StyledLevelBackground>
   );
 }

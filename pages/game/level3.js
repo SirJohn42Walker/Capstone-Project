@@ -40,12 +40,14 @@ export default function Level3({levelState, handleLevelChange}) {
           wrongAnswerReaction={level3Data.dialog[7]}
         />
       )}
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={8}
-        dialogValue={5}
-      />
+      {buttonTextState <= 7 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={8}
+          dialogValue={5}
+        />
+      ) : null}
     </StyledLevelBackground>
   );
 }
