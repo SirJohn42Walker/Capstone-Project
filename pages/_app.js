@@ -2,6 +2,7 @@ import {useState} from "react";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import GlobalStyles from "../styles/GlobalStyles";
+import {BubbleEffect} from "../components/animations/Bubbles";
 
 function MyApp({Component, pageProps}) {
   const [levelState, setLevelState] = useState("");
@@ -19,6 +20,7 @@ function MyApp({Component, pageProps}) {
         handleLevelChange={handleLevelChange}
       />
       <Navbar />
+      <BubbleEffect />
     </>
   );
 }
