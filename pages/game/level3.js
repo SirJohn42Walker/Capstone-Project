@@ -5,6 +5,7 @@ import {useState, useEffect} from "react";
 import {level3Data} from "../../components/LevelData/Level3Data";
 import {ForwardButton} from "../../components/Buttons/ForwardButton";
 import {AnswerForm} from "../../components/Boxes/Interactive Boxes/AnswerForm";
+import SkipButton from "../../components/Buttons/SkipButton";
 
 export default function Level3({levelState, handleLevelChange}) {
   const [textState, setTextState] = useState(0);
@@ -20,6 +21,7 @@ export default function Level3({levelState, handleLevelChange}) {
       ? setTextState(textState + 1)
       : setDialogState(dialogState + 1);
   }
+
   return (
     <StyledLevelBackground levelState={levelState}>
       {buttonTextState >= 4 && buttonTextState < 7 ? (
@@ -38,6 +40,12 @@ export default function Level3({levelState, handleLevelChange}) {
           wrongAnswerReaction={level3Data.dialog[7]}
         />
       )}
+      <SkipButton
+        setButtonTextState={setButtonTextState}
+        setDialogState={setDialogState}
+        buttonTextValue={8}
+        dialogValue={5}
+      />
     </StyledLevelBackground>
   );
 }
