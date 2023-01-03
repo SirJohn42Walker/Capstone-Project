@@ -38,14 +38,17 @@ export default function Level3({levelState, handleLevelChange}) {
           rightAnswer={level3Data.answer}
           rightAnswerReaction={level3Data.dialog[6]}
           wrongAnswerReaction={level3Data.dialog[7]}
+          nextLevel={"/game/level4"}
         />
       )}
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={8}
-        dialogValue={5}
-      />
+      {buttonTextState <= 7 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={8}
+          dialogValue={5}
+        />
+      ) : null}
     </StyledLevelBackground>
   );
 }

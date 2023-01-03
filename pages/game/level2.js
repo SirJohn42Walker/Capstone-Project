@@ -45,15 +45,20 @@ export default function Level2({levelState, handleLevelChange}) {
       ) : (
         <></>
       )}
-      <ForwardButton onClick={furtherButton}>
-        {level2Data.buttonText[buttonTextState]}
-      </ForwardButton>
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={10}
-        dialogValue={8}
-      />
+      {buttonTextState <= 10 ? (
+        <ForwardButton onClick={furtherButton}>
+          {level2Data.buttonText[buttonTextState]}
+        </ForwardButton>
+      ) : null}
+
+      {buttonTextState <= 9 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={10}
+          dialogValue={8}
+        />
+      ) : null}
     </StyledLevelBackground>
   );
 }

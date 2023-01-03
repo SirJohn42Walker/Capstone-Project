@@ -12,8 +12,8 @@ export const level3Data = {
     // ----- break to text -----
     "I've got a new riddle for you now! Are you ready?",
     "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
-    "Very good. That is an acceptable answer.",
-    "Oh no, that is not right at all. I do worry a bit about you. Maybe you're not smart enough to get out of this after all...",
+    "Very good. That is an acceptable answer. Let's get on with it then...",
+    "Oh no, that is not right at all. I do worry a bit about you. Maybe you're not smart enough to get out of this after all... Anyway...",
   ],
   buttonText: [
     "Can we just get on with it, please?",
