@@ -7,12 +7,18 @@ export function AnswerForm({
   rightAnswer,
   rightAnswerReaction,
   wrongAnswerReaction,
+  nextLevel,
 }) {
   const [answer, setAnswer] = useState("");
   const [answerMessage, setAnswerMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
+    setSubmitting(true);
+    setTimeout(() => {
+      window.location.href = nextLevel;
+    }, 5000);
     answer?.includes(rightAnswer)
       ? setAnswerMessage(rightAnswerReaction)
       : setAnswerMessage(wrongAnswerReaction);
@@ -27,7 +33,9 @@ export function AnswerForm({
         placeholder="Your answer goes here."
       ></InputField>
       {answerMessage && <DialogBox>{answerMessage}</DialogBox>}
-      <ForwardButton type="submit">I am sure that is right.</ForwardButton>
+      <ForwardButton type="submit" disabled={submitting}>
+        I am sure that is right.
+      </ForwardButton>
     </form>
   );
 }
