@@ -11,4 +11,5 @@ export const ForwardButton = styled.button`
   display: flex;
   max-width: 70vw;
   transform: translate(-50%);
+  z-index: 12;
 `;
