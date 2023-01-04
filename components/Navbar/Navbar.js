@@ -1,11 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import {
-  HomeIconSVG,
-  GameIconSVG,
-  RandomIconSVG,
-  ProfileIconSVG,
-} from "../Svgs/NavbarSVGs";
+import {HomeIconSVG, RandomIconSVG, ProfileIconSVG} from "../Svgs/NavbarSVGs";
 import {useState} from "react";
 
 export default function Navbar() {

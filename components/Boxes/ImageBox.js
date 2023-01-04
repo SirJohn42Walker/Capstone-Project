@@ -7,8 +7,8 @@ export default function ImageBox(props) {
     <PictureFrame
       key={picture.id}
       src={picture.content}
-      width={200}
-      height={200}
+      width={250}
+      height={175}
     />
   ));
   return <ImageScrollBox>{pictures}</ImageScrollBox>;
@@ -25,8 +25,9 @@ const ImageScrollBox = styled.div`
   display: grid;
   position: absolute;
   bottom: 18vh;
-  top: 30vh;
-  left: 25vw;
+  top: 37vh;
+  left: 8vw;
+  right: 8vw;
   grid-gap: 3vh;
   grid-template-columns: 1fr;
   align-content: space-between;

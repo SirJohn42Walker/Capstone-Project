@@ -22,7 +22,7 @@ const SkipText = styled.button`
   background-color: var(--color8);
   color: var(--color6);
   position: fixed;
-  bottom: 11vh;
+  bottom: 14vh;
   left: 50vw;
   width: 80vw;
   border-radius: 15px;

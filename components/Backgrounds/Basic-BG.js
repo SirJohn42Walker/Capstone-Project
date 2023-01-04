@@ -11,7 +11,6 @@ const StyledMain = styled.main`
   width: 100vw;
   background: conic-gradient(
     from 180deg at 50% 50%,
-    var(--color15) 0deg,
     var(--color17) 50.63deg,
     var(--color16) 166.87deg,
     var(--color18) 241.88deg,
@@ -36,6 +35,9 @@ export const StyledLevelBackground = styled.main`
       : ""}
   background-size: cover;
   z-index: -1;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export default StyledMain;

@@ -17,11 +17,11 @@ export function DialogBox({children}) {
 }
 
 export const Frame = styled.div`
-  font-family: ${props => (props.dialog ? "Sharp" : "")};
-  color: ${props => (props.dialog ? "var(--color8)" : "var(--color1)")};
+  font-family: ${props => (props.dialog ? "Caveat" : "")};
+  color: ${props => (props.dialog ? "var(--color9)" : "var(--color1)")};
   background-color: ${props =>
-    props.dialog ? "var(--color2)" : "var(--color13)"};
-  border: 2px solid var(--color12);
+    props.dialog ? "var(--color17)" : "var(--color13)"};
+  border: 2px solid var(--color13);
   margin: 15vh 8vw 0 8vw;
   border-radius: 25px;
   display: flex;
