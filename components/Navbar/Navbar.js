@@ -24,7 +24,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/game/level1" onClick={() => SetActiveState("game")}>
-            <GameIconSVG
+            <ProfileIconSVG
               width="50"
               heigth="50"
               fill={activeState === "game" ? "var(--color8)" : "var(--color3)"}
@@ -38,17 +38,6 @@ export default function Navbar() {
               heigth="50"
               fill={
                 activeState === "random" ? "var(--color8)" : "var(--color3)"
-              }
-            />
-          </Link>
-        </li>
-        <li>
-          <Link href="/profile" onClick={() => SetActiveState("profile")}>
-            <ProfileIconSVG
-              width="50"
-              heigth="50"
-              fill={
-                activeState === "profile" ? "var(--color8)" : "var(--color3)"
               }
             />
           </Link>
