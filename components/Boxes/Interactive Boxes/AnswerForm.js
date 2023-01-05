@@ -34,7 +34,7 @@ export function AnswerForm({
       ></InputField>
       {answerMessage && <DialogBox>{answerMessage}</DialogBox>}
       <ForwardButton type="submit" disabled={submitting}>
-        Obviously this.
+        Of course this is the answer.
       </ForwardButton>
     </form>
   );
@@ -44,7 +44,7 @@ const InputField = styled.input`
   background-color: var(--color13);
   color: var(--color2);
   position: fixed;
-  bottom: 30vh;
+  bottom: 28vh;
   left: 50%;
   border-radius: 15px;
   padding: 5px;
