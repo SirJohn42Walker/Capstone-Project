@@ -50,8 +50,14 @@ const NavBar = styled.nav`
   right: 2vw;
   height: 80px;
   border-radius: 20px;
-  background-color: var(--color14);
-  filter: drop-shadow(6px -6px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    172deg,
+    var(--color12),
+    var(--color13),
+    var(--color14),
+    var(--color14)
+  );
+  filter: drop-shadow(6px -6px 4px rgba(0, 0, 0, 0.42));
 `;
 
 const NavIcons = styled.ul`

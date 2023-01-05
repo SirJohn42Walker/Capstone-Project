@@ -35,9 +35,6 @@ export const StyledLevelBackground = styled.main`
       : ""}
   background-size: cover;
   z-index: -1;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 export default StyledMain;
