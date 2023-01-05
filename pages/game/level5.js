@@ -13,7 +13,7 @@ export default function Level5({levelState, handleLevelChange}) {
   const [dialogState, setDialogState] = useState(0);
   const [buttonTextState, setButtonTextState] = useState(0);
   useEffect(() => {
-    handleLevelChange(6);
+    handleLevelChange(7);
   }, []);
 
   function furtherButton() {
@@ -34,14 +34,25 @@ export default function Level5({levelState, handleLevelChange}) {
           {Level5Data.buttonText[buttonTextState]}
         </ForwardButton>
       ) : null}
-      <ImageBox data={LevelPictures} />
+      {buttonTextState >= 13 ? (
+        <ImageBox
+          data={LevelPictures}
+          linkIndex={4}
+          linkWidth={"3.5em"}
+          linkHeight={"6em"}
+          linkBottom={"3em"}
+          linkLeft={"5.5em"}
+        />
+      ) : null}
 
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={10}
-        dialogValue={9}
-      />
+      {buttonTextState <= 12 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={13}
+          dialogValue={12}
+        />
+      ) : null}
     </StyledLevelBackground>
   );
 }

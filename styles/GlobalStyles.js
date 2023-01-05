@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
         isolation: isolate;
     }
 
+
 // Global Colors
     :root {
         --color1: #fcffeb; // Ivory
@@ -89,6 +90,13 @@ const GlobalStyles = createGlobalStyle`
     @font-face {
         font-family: "Christmas";
         src: url("/fonts/Best Christmas - Personal Use.otf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Caveat";
+        src: url("/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
         font-weight: 400;
         font-style: normal;
     }

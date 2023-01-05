@@ -11,7 +11,7 @@ export default function LevelXY({levelState, handleLevelChange}) {
   const [dialogState, setDialogState] = useState(0);
   const [buttonTextState, setButtonTextState] = useState(0);
   useEffect(() => {
-    handleLevelChange(5);
+    handleLevelChange(6);
   }, []);
 
   function furtherButton() {
@@ -25,18 +25,20 @@ export default function LevelXY({levelState, handleLevelChange}) {
         <ForwardButton onClick={furtherButton}>
           {Level4Data.buttonText[buttonTextState]}
         </ForwardButton>
-      ) : (
-        <></>
-      )}
-      <SkipButton
-        setButtonTextState={setButtonTextState}
-        setDialogState={setDialogState}
-        buttonTextValue={5}
-        dialogValue={5}
-      />
-      <Link href="/game/level5">
-        <ShellSVG width="150" height="150" fill="var(--color8)"></ShellSVG>
-      </Link>
+      ) : null}
+      {buttonTextState <= 4 ? (
+        <SkipButton
+          setButtonTextState={setButtonTextState}
+          setDialogState={setDialogState}
+          buttonTextValue={5}
+          dialogValue={5}
+        />
+      ) : null}
+      {buttonTextState > 4 ? (
+        <Link href="/game/level5">
+          <ShellSVG width="150" height="150" fill="var(--color8)"></ShellSVG>
+        </Link>
+      ) : null}
     </StyledLevelBackground>
   );
 }

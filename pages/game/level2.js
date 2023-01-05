@@ -17,7 +17,7 @@ export default function Level2({levelState, handleLevelChange}) {
   const [dialogState, setDialogState] = useState(0);
   const [buttonTextState, setButtonTextState] = useState(0);
   useEffect(() => {
-    handleLevelChange(3);
+    handleLevelChange(4);
   }, []);
 
   function furtherButton() {
@@ -36,11 +36,11 @@ export default function Level2({levelState, handleLevelChange}) {
       )}
       {buttonTextState > 9 ? (
         <>
-          <BlueButtonSVG width="100" height="100" top="60%" left="30%" />
+          <BlueButtonSVG width="100" height="100" top="61%" left="27%" />
           <Link href="/game/level3">
-            <RedButtonSVG width="100" height="100" top="60%" left="70%" />
+            <RedButtonSVG width="100" height="100" top="61%" left="73%" />
           </Link>
-          <GreenButtonSVG width="100" height="100" top="42%" />
+          <GreenButtonSVG width="100" height="100" top="46%" />
         </>
       ) : (
         <></>

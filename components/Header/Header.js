@@ -16,8 +16,14 @@ const FixedHeader = styled.div`
   left: 2vw;
   right: 2vw;
   height: 80px;
-  background-color: var(--color14);
-  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    172deg,
+    var(--color9),
+    var(--color10),
+    var(--color12),
+    var(--color13)
+  );
+  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.42));
   border-radius: 20px;
   display: flex;
   justify-content: center;

@@ -1,11 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import {
-  HomeIconSVG,
-  GameIconSVG,
-  RandomIconSVG,
-  ProfileIconSVG,
-} from "../Svgs/NavbarSVGs";
+import {HomeIconSVG, RandomIconSVG, ProfileIconSVG} from "../Svgs/NavbarSVGs";
 import {useState} from "react";
 
 export default function Navbar() {
@@ -24,7 +19,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/game/level1" onClick={() => SetActiveState("game")}>
-            <GameIconSVG
+            <ProfileIconSVG
               width="50"
               heigth="50"
               fill={activeState === "game" ? "var(--color8)" : "var(--color3)"}
@@ -42,17 +37,6 @@ export default function Navbar() {
             />
           </Link>
         </li>
-        <li>
-          <Link href="/profile" onClick={() => SetActiveState("profile")}>
-            <ProfileIconSVG
-              width="50"
-              heigth="50"
-              fill={
-                activeState === "profile" ? "var(--color8)" : "var(--color3)"
-              }
-            />
-          </Link>
-        </li>
       </NavIcons>
     </NavBar>
   );
@@ -66,8 +50,14 @@ const NavBar = styled.nav`
   right: 2vw;
   height: 80px;
   border-radius: 20px;
-  background-color: var(--color14);
-  filter: drop-shadow(6px -6px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    172deg,
+    var(--color12),
+    var(--color13),
+    var(--color14),
+    var(--color14)
+  );
+  filter: drop-shadow(6px -6px 4px rgba(0, 0, 0, 0.42));
 `;
 
 const NavIcons = styled.ul`
