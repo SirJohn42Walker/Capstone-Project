@@ -34,14 +34,23 @@ export default function Level5({levelState, handleLevelChange}) {
           {Level5Data.buttonText[buttonTextState]}
         </ForwardButton>
       ) : null}
-      {buttonTextState >= 13 ? <ImageBox data={LevelPictures} /> : null}
+      {buttonTextState >= 13 ? (
+        <ImageBox
+          data={LevelPictures}
+          linkIndex={4}
+          linkWidth={"3.5em"}
+          linkHeight={"6em"}
+          linkBottom={"3em"}
+          linkLeft={"5.5em"}
+        />
+      ) : null}
 
       {buttonTextState <= 12 ? (
         <SkipButton
           setButtonTextState={setButtonTextState}
           setDialogState={setDialogState}
-          buttonTextValue={10}
-          dialogValue={9}
+          buttonTextValue={13}
+          dialogValue={12}
         />
       ) : null}
     </StyledLevelBackground>

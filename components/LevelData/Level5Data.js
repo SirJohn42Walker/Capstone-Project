@@ -15,7 +15,7 @@ export const Level5Data = {
     /*21*/ "I will now summon a number of pictures out of the depth of your mind. One of them will have a letter on it. Find that letter as the first hint!",
     "Yeah, of course.",
     "Where else did you think the buttons came from? We are at the bottom of the ocean, after all.",
-    "... Yes. And now get on with it. Find the letter.",
+    "... Yes. And now get on with it. Find the letter in the pictures.",
   ],
   buttonText: [
     /*2*/ "Okay. First of all: Who are you?",
@@ -30,6 +30,6 @@ export const Level5Data = {
     /*20*/ "Ah. Damnit.",
     /*22*/ "Wait. Pictures out of my MIND?",
     "You can just do that?",
-    "You are kidding me, right?",
+    "You are pulling my leg, right?",
   ],
 };
