@@ -13,7 +13,7 @@ export default function Level5({levelState, handleLevelChange}) {
   const [dialogState, setDialogState] = useState(0);
   const [buttonTextState, setButtonTextState] = useState(0);
   useEffect(() => {
-    handleLevelChange(6);
+    handleLevelChange(7);
   }, []);
 
   function furtherButton() {

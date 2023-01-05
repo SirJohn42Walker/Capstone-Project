@@ -4,7 +4,7 @@ import {useEffect} from "react";
 
 export default function Home({levelState, handleLevelChange}) {
   useEffect(() => {
-    handleLevelChange(1);
+    handleLevelChange(2);
   }, []);
   return (
     <StyledLevelBackground levelState={levelState}>

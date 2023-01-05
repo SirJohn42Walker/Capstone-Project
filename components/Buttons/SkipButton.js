@@ -11,25 +11,21 @@ export default function SkipButton({
     setDialogState(dialogValue);
   }
 
-  return (
-    <SkipText onClick={skipButton}>
-      I am a very boring person and do not want to read all this text.
-    </SkipText>
-  );
+  return <SkipText onClick={skipButton}>Skip to riddle.</SkipText>;
 }
 
 const SkipText = styled.button`
-  background-color: var(--color8);
-  color: var(--color6);
+  filter: opacity(0.89);
+  background-color: var(--color12);
+  color: var(--color14);
   position: fixed;
-  bottom: 14vh;
-  left: 50vw;
-  width: 80vw;
-  border-radius: 15px;
+  bottom: 16vh;
+  left: 4vw;
+  width: auto;
+  border-radius: 35%;
   padding: 5px;
-  font-size: smaller;
+  font-size: x-small;
   display: flex;
-  max-width: 70vw;
-  transform: translate(-50%);
+  max-width: 15vw;
   z-index: 1000;
 `;

@@ -18,10 +18,11 @@ export function DialogBox({children}) {
 
 export const Frame = styled.div`
   font-family: ${props => (props.dialog ? "Caveat" : "")};
-  color: ${props => (props.dialog ? "var(--color9)" : "var(--color2)")};
+  color: ${props => (props.dialog ? "var(--color16)" : "var(--color2)")};
   background-color: ${props =>
-    props.dialog ? "var(--color17)" : "var(--color13)"};
-  border: 7px double var(--color12);
+    props.dialog ? "var(--color9)" : "var(--color13)"};
+  border: ${props =>
+    props.dialog ? "7px double var(--color16)" : "3px solid var(--color2)"};
   margin: 15vh 8vw 0 8vw;
   border-radius: 25px;
   filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.42));
