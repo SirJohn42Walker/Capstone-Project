@@ -15,7 +15,7 @@ export default function ImageBox(props) {
 }
 
 const PictureFrame = styled(Image)`
-  filter: opacity(0.92);
+  filter: opacity(0.85);
   border-radius: 30px;
   justify-self: center;
   object-fit: cover;
@@ -24,8 +24,8 @@ const PictureFrame = styled(Image)`
 const ImageScrollBox = styled.div`
   display: grid;
   position: absolute;
-  bottom: 18vh;
-  top: 37vh;
+  bottom: 15vh;
+  top: 33vh;
   left: 8vw;
   right: 8vw;
   grid-gap: 3vh;

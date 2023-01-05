@@ -18,8 +18,6 @@ const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
-    ::-webkit-scrollbar {display: none;}
-
     img, picture, video, canvas, svg {
         display: block;
         max-width: 100%;
