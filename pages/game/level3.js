@@ -22,6 +22,11 @@ export default function Level3({levelState, handleLevelChange}) {
       : setDialogState(dialogState + 1);
   }
 
+  // const Dialog;
+  // if (buttonTextState>=4 && buttonTextState <7) {
+  //   Dialog = (<TextBox>{level3Data.text[textState]}</TextBox>)
+  // } else {Dialog = (<DialogBox>{level3Data.dialog[dialogState]}</DialogBox>);}
+
   return (
     <StyledLevelBackground levelState={levelState}>
       {buttonTextState >= 4 && buttonTextState < 7 ? (
@@ -35,12 +40,14 @@ export default function Level3({levelState, handleLevelChange}) {
         </ForwardButton>
       ) : (
         <AnswerForm
+          setDialogState={setDialogState}
           rightAnswer={level3Data.answer}
           rightAnswerReaction={level3Data.dialog[6]}
           wrongAnswerReaction={level3Data.dialog[7]}
           nextLevel={"/game/level4"}
         />
       )}
+
       {buttonTextState <= 7 ? (
         <SkipButton
           setButtonTextState={setButtonTextState}

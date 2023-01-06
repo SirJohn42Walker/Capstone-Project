@@ -4,7 +4,7 @@ import {HomeIconSVG, RandomIconSVG, ProfileIconSVG} from "../Svgs/NavbarSVGs";
 import {useState} from "react";
 
 export default function Navbar() {
-  const [activeState, SetActiveState] = useState("home");
+  const [activeState, SetActiveState] = useState("game");
   return (
     <NavBar>
       <NavIcons>
