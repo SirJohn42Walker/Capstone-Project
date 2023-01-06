@@ -22,7 +22,7 @@ export default function ImageBox(props) {
     <ClickArea>
       {pictures[linkIndex]}
       <ImageLink
-        href="/game/level1"
+        href="/game/level6"
         width={linkWidth}
         height={linkHeight}
         bottom={linkBottom}

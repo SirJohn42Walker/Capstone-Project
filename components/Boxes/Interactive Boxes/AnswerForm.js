@@ -5,12 +5,16 @@ import {ForwardButton} from "../../Buttons/ForwardButton";
 
 export function AnswerForm({
   rightAnswer,
-  rightAnswerReaction,
-  wrongAnswerReaction,
+  // rightAnswerReaction,
+  // wrongAnswerReaction,
   nextLevel,
+  setDialogState,
 }) {
   const [answer, setAnswer] = useState("");
-  const [answerMessage, setAnswerMessage] = useState("");
+  const [
+    answerMessage,
+    // setAnswerMessage
+  ] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = event => {
@@ -19,9 +23,9 @@ export function AnswerForm({
     setTimeout(() => {
       window.location.href = nextLevel;
     }, 5000);
-    answer?.includes(rightAnswer)
-      ? setAnswerMessage(rightAnswerReaction)
-      : setAnswerMessage(wrongAnswerReaction);
+    answer?.includes(rightAnswer) ? setDialogState(6) : setDialogState(7);
+    //   setAnswerMessage(rightAnswerReaction)
+    // : setAnswerMessage(wrongAnswerReaction);
   };
 
   return (
