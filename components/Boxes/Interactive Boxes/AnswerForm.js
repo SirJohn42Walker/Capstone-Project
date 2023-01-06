@@ -2,17 +2,19 @@ import styled from "styled-components";
 import {useState} from "react";
 import {DialogBox} from "../Textbox";
 import {ForwardButton} from "../../Buttons/ForwardButton";
-import {level3Data} from "../../LevelData/Level3Data";
 
 export function AnswerForm({
   rightAnswer,
-  rightAnswerReaction,
-  wrongAnswerReaction,
+  // rightAnswerReaction,
+  // wrongAnswerReaction,
   nextLevel,
   setDialogState,
 }) {
   const [answer, setAnswer] = useState("");
-  const [answerMessage, setAnswerMessage] = useState("");
+  const [
+    answerMessage,
+    // setAnswerMessage
+  ] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = event => {
